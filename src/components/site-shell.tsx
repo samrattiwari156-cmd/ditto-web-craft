@@ -14,13 +14,13 @@ export function SiteHeader() {
   const groups = ["IT Solutions", "Digital Marketing"] as const;
   return <>
     <div className="hidden border-b border-border bg-background lg:block">
-      <div className="site-container flex h-14 items-center gap-8 text-sm text-muted-foreground">
-        <a href="tel:+971048341191" className="inline-flex items-center gap-2"><Phone className="text-primary" /> +971 04 834 1191</a>
-        <span className="h-6 w-px bg-border" />
-        <span className="inline-flex items-center gap-2"><MapPin className="text-primary" />2908, Silver Tower, Business Bay Dubai, UAE</span>
-        <span className="h-6 w-px bg-border" />
-        <a href="mailto:hello@arnit.ae" className="inline-flex items-center gap-2"><Mail className="text-primary" />hello@arnit.ae</a>
-        <div className="ml-auto flex items-center gap-4 text-muted-foreground"><Facebook /><Instagram /><X /><Linkedin /></div>
+      <div className="site-container flex h-9 items-center gap-6 text-xs text-muted-foreground">
+        <a href="tel:+971048341191" className="inline-flex items-center gap-1.5"><Phone className="size-3.5 text-primary" /> +971 04 834 1191</a>
+        <span className="h-4 w-px bg-border" />
+        <span className="inline-flex items-center gap-1.5"><MapPin className="size-3.5 text-primary" />2908, Silver Tower, Business Bay Dubai, UAE</span>
+        <span className="h-4 w-px bg-border" />
+        <a href="mailto:hello@arnit.ae" className="inline-flex items-center gap-1.5"><Mail className="size-3.5 text-primary" />hello@arnit.ae</a>
+        <div className="ml-auto flex items-center gap-3 text-muted-foreground"><Facebook className="size-3.5" /><Instagram className="size-3.5" /><X className="size-3.5" /><Linkedin className="size-3.5" /></div>
       </div>
     </div>
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
