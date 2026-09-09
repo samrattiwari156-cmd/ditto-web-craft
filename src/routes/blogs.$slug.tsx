@@ -9,8 +9,9 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/blogs/$slug")({
   loader: ({ params }) => {
     const index = posts.findIndex((p) => p.slug === params.slug);
-    if (index === -1) throw notFound();
-    return { post: posts[index], index };
+    const post = posts[index];
+    if (!post) throw notFound();
+    return { post, index };
   },
   head: ({ loaderData }) => ({
     meta: [
